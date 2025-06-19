@@ -18,12 +18,12 @@ PROJECT_URL = os.environ.get('PROJECT_URL', '')        # 项目url,需要自动�
 AUTO_ACCESS = os.environ.get('AUTO_ACCESS', 'false').lower() == 'true'  # false关闭自动保活, true开启自动保活，默认关闭
 FILE_PATH = os.environ.get('FILE_PATH', './.cache')    # 运行路径,sub.txt保存路径
 SUB_PATH = os.environ.get('SUB_PATH', 'sub')           # 订阅token,默认sub，例如：https://www.google.com/sub
-UUID = os.environ.get('UUID', '20e6e496-cf19-45c8-b883-14f5e11cd9f1')  # UUID,如使用哪吒v1,在不同的平台部署需要修改,否则会覆盖
-NEZHA_SERVER = os.environ.get('NEZHA_SERVER', '')      # 哪吒面板域名或ip, v1格式: nezha.xxx.com:8008, v0格式: nezha.xxx.com
+UUID = os.environ.get('UUID', '125b3c02-7e80-4750-8017-465b290fbb49')  # UUID,如使用哪吒v1,在不同的平台部署需要修改,否则会覆盖
+NEZHA_SERVER = os.environ.get('NEZHA_SERVER', 'nezha.520961.xyz:8008')      # 哪吒面板域名或ip, v1格式: nezha.xxx.com:8008, v0格式: nezha.xxx.com
 NEZHA_PORT = os.environ.get('NEZHA_PORT', '')          # v1哪吒请留空, v0哪吒的agent通信端口,自动匹配tls
-NEZHA_KEY = os.environ.get('NEZHA_KEY', '')            # v1哪吒的NZ_CLIENT_SECRET或v0哪吒agent密钥
-ARGO_DOMAIN = os.environ.get('ARGO_DOMAIN', '')        # Argo固定隧道域名,留空即使用临时隧道
-ARGO_AUTH = os.environ.get('ARGO_AUTH', '')            # Argo固定隧道密钥,留空即使用临时隧道
+NEZHA_KEY = os.environ.get('NEZHA_KEY', 'eyJhIjoiMzQ0YWNlODY2ZGIwMzVjOGQ3YjE2MjFjZWUzOTMxYjYiLCJ0IjoiODk3OWFmNWMtMDUwOC00OWQxLWI3ZTMtNDNjNDVmY2JiMTJmIiwicyI6IlpqVXhaVEUzTkRNdE1USTBNaTAwWlRVMUxXSmpaamt0TXpKaE56ZzJZamRrTmpObCJ9')            # v1哪吒的NZ_CLIENT_SECRET或v0哪吒agent密钥
+ARGO_DOMAIN = os.environ.get('ARGO_DOMAIN', 'galaxycloud.xxtt.dpdns.org')        # Argo固定隧道域名,留空即使用临时隧道
+ARGO_AUTH = os.environ.get('ARGO_AUTH', 'eyJhIjoiMzQ0YWNlODY2ZGIwMzVjOGQ3YjE2MjFjZWUzOTMxYjYiLCJ0IjoiODk3OWFmNWMtMDUwOC00OWQxLWI3ZTMtNDNjNDVmY2JiMTJmIiwicyI6IlpqVXhaVEUzTkRNdE1USTBNaTAwWlRVMUxXSmpaamt0TXpKaE56ZzJZamRrTmpObCJ9')            # Argo固定隧道密钥,留空即使用临时隧道
 ARGO_PORT = int(os.environ.get('ARGO_PORT', '8001'))   # Argo端口,使用固定隧道token需在cloudflare后台设置端口和这里一致
 CFIP = os.environ.get('CFIP', 'www.visa.com.tw')       # 优选ip或优选域名
 CFPORT = int(os.environ.get('CFPORT', '443'))          # 优选ip或优选域名对应端口
